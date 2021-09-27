@@ -4,7 +4,8 @@ from nltk.stem import SnowballStemmer
 from nltk.stem import WordNetLemmatizer
 
 #might be needed depending if nltk installed on local machine or not
-#nltk.download()
+nltk.download('punkt')
+nltk.download('wordnet')
 
 csv = pd.read_csv("Musical_instruments_reviews.csv", index_col=False)
 csv.info()
